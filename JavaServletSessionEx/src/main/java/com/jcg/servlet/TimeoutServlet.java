@@ -25,12 +25,15 @@ public class TimeoutServlet extends HttpServlet {
 		/***** Set Response Content Type *****/
 		response.setContentType("text/html");
 
+
 		/***** Post Parameters From The Request *****/
 		String param1 = request.getParameter("username");
 		if (param1 != null && !param1.equals("")) {
+
 			int timeout = 20;
 			HttpSession sessionObj = request.getSession(true);
-			
+
+
 			/***** Setting The Updated Session Time Out *****/
 			sessionObj.setMaxInactiveInterval(timeout);
 
