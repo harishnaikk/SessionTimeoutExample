@@ -18,10 +18,6 @@ public class TimeoutServlet extends HttpServlet {
 	/***** This Method Is Called By The Servlet Container To Process A 'POST' Request *****/
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		handleRequest(request, response);
-		
-		
-		
-		System.out.println("harish");
 	}
 
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
